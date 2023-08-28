@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Joti+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap');
+.app {
+    width:100vw;
+    min-height:100vh;
+    background:  linear-gradient(180deg, #7DFFC1 33.12%, #0FF 100%);
+    padding-top: 6px;
+    .Hero {
+        width:95vw;
+        height: 1010px;
+        background-color: #FFFFFFE5;
+        margin: 0 auto;
+        border-radius: 8px;
+        .top {
+            width: 100%;
+            height: 40px;
+            border-radius: 8px, 8px, 0px, 0px;
+            background-color: #D9D9D9;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            .img {
+                background-image: url(/public/Cross.png);
+                width:25px;
+                height:25px;
+                background-size: cover;
+                margin-right: 10px;
+            }
+        }
+        .Dec-block {
+            margin-top: 2.5%;
+            width:90%;
+            padding-left: 5%;
+            padding-right: 5%;
+            height:90%;
+            overflow-y: hidden;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .dec-r {
+                background-image: url(/public/dec-r.png);
+                width:40px;
+                background-repeat: no-repeat;
+            }
+            .dec-l {
+                background-image: url(/public/dev-l.png);
+                width:40px;
+                background-repeat: no-repeat;
+            } 
+            .text {
+                margin-top: 25%;
+                background: linear-gradient(315deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.80) 100%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                text-shadow: 0px 10px 9px rgba(0, 0, 0, 0.25);
+                font-family: "Joti One";
+                font-size: 128px;
+            }
+        }
+    
+    }
+    .Posts {
+        width:100vw;
+        min-height: 100px;
+        background-color: rgba(255, 255, 255, 0.90);
+        margin-top: 54px;
+        padding-left: 2%;
+        padding-right: 5%;
+        padding-bottom: 3%;
+    }
+    .Post-page {
+        width:95%;
+        height:98vh;
+        margin-top: 1vh;
+        margin-left: 2.5%;
+        background-color: rgba(255, 255, 255, 0.80);
+        border: 1px solid rgba(0, 0, 0, 0.07);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        border-radius: 30px;
+        .top {
+            border-radius: 8px 8px 0px 0px;
+            background-color: #D9D9D9;
+            width:100%;
+            height:40px;
+            .back {
+                width:10%;
+                height:40px;
+                border:none;
+                background-color: rgba(218, 218, 218, 0.9);
+                font-family: "Mulish";
+                font-weight: 600;
+            }
+        }
+        .Hero-post {
+            width:100%;
+            height:30%;
+            border-radius: 0px 0px 30px 30px;
+            background-color: white;
+            overflow-y: hidden;
+           .Hero-post-img {
+                width:50%;
+                height:100%;
+                margin-left:25%;
+            } 
+        }
+        .title {
+            max-width:90%;
+            margin: 0 auto;
+            margin-top: 15px;
+            font-family: "Mulish";
+            text-align: center;
+        }
+        .body {
+            font-family: "Mulish";
+            max-width:90%;
+            margin:0 auto;
+            margin-top:15px;
+            .href {
+                text-decoration: underline;
+                color: rgba(36, 124, 225, 0.9);
+                transition: all 1s linear;
+            }
+        }
+    }
+}
+.Post {
+    margin-top: 20px;
+    height:400px;
+    width:95vw;
+    background-color: rgba(255, 255, 255, 0.80);
+    border: 1px solid rgba(0, 0, 0, 0.07);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    flex-direction: column;
+    overflow-y: hidden;
+    display: flex;
+    
+    .top {
+        height:32px;
+        width:100%;
+        border-radius: 0px, 0px, 30px, 30px;
+        background: #D9D9D9;
+        
+    }
+    .row {
+        display: flex;
+        flex-direction: row;
+        overflow-y: hidden;
+        .img { 
+            min-width:400px;
+            max-width: 400px;
+            height:390px;
+        }
+        .text {
+            margin-left: 15px;
+            >h1 {
+                color: #000;
+                font-family: "Mulish";
+                font-size: 36px;
+                font-weight: 500;
+                margin-top: 34px;
+            }
+            >p {
+                color: rgba(0, 0, 0, 0.90);
+                font-family: "Mulish";
+                font-size: 24px;
+                font-weight: 300;
+            }
+        }
+    }
+}
