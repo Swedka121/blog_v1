@@ -7,7 +7,7 @@ import PostPage from './Post-page.jsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <BrowserRouter basename='/blog_v1/'>
+    <BrowserRouter basename='/'>
         <Routes >
             <Route path="/" element={<App></App>}/>
             <Route path="/post/:postID/" element={<PostPage></PostPage>}/>
